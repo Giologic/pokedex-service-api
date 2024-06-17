@@ -1,0 +1,16 @@
+{
+  "name": "pokemon-service",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "load-pokemon": "node src/load_pokemon.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pocketbase": "^0.1.0",
+    "dotenv": "^8.2.0",
+    "pokedex-promise-v2": "^5.0.1"
+  }
+}
