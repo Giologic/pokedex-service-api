@@ -19,6 +19,7 @@ const fetchPokemonData = async () => {
         for (const species of pokemonSpecies) {
             const speciesData = await P.getPokemonByName(species.name);
             const pokemonData = {
+                pokemon_id: speciesData.id,
                 name: speciesData.name,
                 type: speciesData.types.map(typeInfo => typeInfo.type.name),
                 abilities: speciesData.abilities.map(abilityInfo => abilityInfo.ability.name),
