@@ -5,9 +5,6 @@ import pb from './services/pocketbase.js';
 
 const app = express();
 
-
-
-
 app.use(bodyParser.json());
 app.use('/api', routes);
 
